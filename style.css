@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 :root {
   --btn-color: #e58f00;
   --about-sec: #1d1d23;
@@ -28,10 +29,13 @@ html {
   z-index: 100;
   background: #1d1d23;
 }
-.logo img {
-  width: 100px;
-  height: 100%;
+.logo {
+  width: 60px;
   transform: scale(1.6);
+}
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 .navbar a {
   color: white;
@@ -74,7 +78,7 @@ html {
 /* design for home section */
 
 .home {
-  padding: 1rem 7%;
+  padding: 10rem 7%;
   background: url(images/background.png);
   min-height: 100vh;
   height: 100%;
@@ -224,7 +228,7 @@ html {
   object-fit: cover;
 }
 .gallery {
-  padding: 4rem 7%;
+  padding: 10rem 7%;
   background: var(--about-sec);
 }
 .gallery h1 {
@@ -243,11 +247,32 @@ html {
 }
 .inner-gallery {
   flex: 1 1 300px;
+  position: relative;
+  overflow: hidden;
+}
+.inner-gallery > a {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007b;
+  z-index: 99;
+  color: #f7f7f7;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-gallery:hover > a {
+  top: 0;
 }
 .inner-gallery .gallery-image img {
   width: 100%;
 }
-.inner-gallery .gallery-image:hover img {
+
+.inner-gallery:hover .gallery-image img {
   transform: perspective(1000px) rotateX(-4.8deg) rotateY(-10.23deg)
     scale3d(1.05, 1.05, 1.05);
   clip-path: polygon(
@@ -270,8 +295,36 @@ html {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socials a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  background: #f7f7f7;
+  color: var(--about-sec);
+  border-radius: 0.5rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.socials a:hover {
+  color: #fff;
+  background: var(--about-sec);
+}
+
 .food-main-content {
   width: 40%;
   border: 4px solid white;
@@ -291,7 +344,7 @@ html {
   line-height: 30px;
 }
 .our-menu-food {
-  padding: 2rem 7%;
+  padding: 10rem 7%;
   background-color: var(--about-sec);
 }
 .our-menu-food h1 {
@@ -311,11 +364,15 @@ html {
 .inner-menu-food {
   flex: 1 1 300px;
 }
+
 .menu-food-content {
   width: 100%;
 }
 .menu-food-content img {
   width: 100%;
+}
+.menu-food-content:hover img {
+  transform: scale(0.98);
 }
 
 .menu-food-text {
