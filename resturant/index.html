@@ -1,580 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Basic -->
+<html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Mobile Metas -->
+    <title>CF Resturant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Site Metas -->
     <meta name="description" content="Cafe ,Resturant and Catering services" />
     <meta
       name="keywords"
       content="cafe, resturant,eatery,food,catering,Kitchen, cooking"
     />
     <meta name="author" content="A.A.R" />
-    <title>CF Resturant</title>
 
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Site CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+
+    <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css" />
-    <script src="./components/footer.js" defer ></script>
-  </head>
 
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- navbar component -->
+    <script src="./components/navbar.js" defer></script>
+    <!-- footer component -->
+    <script src="./components/footer.js" defer></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
   <body>
-    <!-- Start header -->
-    <header class="top-navbar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+      <nav class="fh5co-nav" role="navigation">
+        <!-- <div class="top-menu"> -->
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="../images/logo-gold.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbars-rs-food"
-            aria-controls="navbars-rs-food"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbars-rs-food">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-              </li>
-			  <li class="nav-item">
-				  <a class="nav-link" href="reservation.html">Reservation</a
-        </li>
-			        <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="col-xs-12 text-center logo-wrap">
+              <div id="fh5co-logo">
+                <a href="../index.html">Concept Foods<span>.</span></a>
+              </div>
+            </div>
+            <div class="col-xs-12 text-center menu-1 menu-wrap">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Bookings</a></li>
+                <li>
+                  <a href="gallery.html ">Gallery</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <!-- </div> -->
       </nav>
-    </header>
-    <!-- End header -->
 
-    <!-- Start slides -->
-    <div id="slides" class="cover-slides">
-      <ul class="slides-container">
-        <li class="text-center">
-          <img src="images/slider-01.jpg" alt="" />
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="m-b-20">
-                  <strong
-                    >Welcome To <br />
-                    Concept Foods Restaurant</strong
-                  >
-                </h1>
-                <p class="m-b-40">
-                 Eat Healthy and Live Well
-                 
+      <header
+        id="fh5co-header"
+        class="fh5co-cover js-fullheight"
+        role="banner"
+        style="background-image: url(images/hero-bg.jpg)"
+        data-stellar-background-ratio="0.5"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="display-t js-fullheight">
+                <div
+                  class="display-tc js-fullheight animate-box"
+                  data-animate-effect="fadeIn"
+                >
+                  <h1>
+                    Eat <em>Healthy</em> <em>&amp;</em> Live <em>Well</em> East
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div id="fh5co-about" class="fh5co-section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6 col-md-pull-4 img-wrap animate-box"
+              data-animate-effect="fadeInLeft"
+            >
+              <img src="images/about-us.jpg" alt="concept foods" />
+            </div>
+            <div class="col-md-5 col-md-push-1 animate-box">
+              <div class="section-heading">
+                <h2>The Restaurant</h2>
+                <p>
+                  Concept Foods strives to use local, sustainable, and organic
+                  ingredients. We put a lot of effort into finding the best
+                  ingredients, and we make everything from scratch with love. We
+                  also try to minimize our environmental impact whenever
+                  possible and pay our workforce a living salary .
                 </p>
                 <p>
-                  <a
-                    class="btn btn-lg btn-circle btn-outline-new-white"
-                    href="#"
-                    >Order Now!</a
-                  >
+                  Overall, these factors result in increased menu pricing, but
+                  we hope that you still find them reasonable and that it gives
+                  you some peace of mind knowing that we strive to do what is
+                  essential to us every day.
                 </p>
               </div>
             </div>
           </div>
-        </li>
-        <li class="text-center">
-          <img src="images/slider-02.jpg" alt="" />
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="m-b-20">
-					<strong
-					  >Welcome To <br />
-					  Concept Foods Restaurant</strong
-					>
-				  </h1>
-				  <p class="m-b-40">
-				   Eat Healthy and Live Well
-				   
-				  </p>
-				  <p>
-					<a
-					  class="btn btn-lg btn-circle btn-outline-new-white"
-					  href="#"
-					  >Order Now!</a
-					>
-				  </p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="text-center">
-          <img src="images/slider-03.jpg" alt="" />
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-				<h1 class="m-b-20">
-					<strong
-					  >Welcome To <br />
-					  Concept Foods Restaurant</strong
-					>
-				  </h1>
-				  <p class="m-b-40">
-				   Eat Healthy and Live Well
-				   
-				  </p>
-				  <p>
-					<a
-					  class="btn btn-lg btn-circle btn-outline-new-white"
-					  href="#"
-					  >Order Now!</a
-					>
-				  </p>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="slides-navigation">
-        <a href="#" class="next"
-          ><i class="fa fa-angle-right" aria-hidden="true"></i
-        ></a>
-        <a href="#" class="prev"
-          ><i class="fa fa-angle-left" aria-hidden="true"></i
-        ></a>
-      </div>
-    </div>
-    <!-- End slides -->
-
-    <!-- Start About -->
-    <div class="about-section-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="images/about-img.jpg" alt="" class="img-fluid" />
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-            <div class="inner-column">
-              <h1>Welcome To <span>Concept Foods Restaurant</span></h1>
-              <h4>Eat Healthy <em>& </em> Live Well</h4>
-              <p>
-                Concept Foods strives to use local, sustainable, and organic ingredients. We put a lot of effort into finding the best ingredients, and we make everything from scratch with love. We also try to minimize our environmental impact whenever possible and pay our workforce a living salary .
-
-               
-              </p>
-              <p>
-                Overall, these factors result in increased menu pricing, but we hope that you still find them reasonable and that it gives you some peace of mind knowing that we strive to do what is essential to us every day.
-              </p>
-              <a class="btn btn-lg btn-circle btn-outline-new-white" href="#"
-                >Order</a
-              >
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-    <!-- End About -->
-
-    <!-- Start QT -->
-    <div class="qt-box qt-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-left">
-            <p class="lead">
-              " If you're not the one cooking, stay out of the way and
-              compliment the chef. "
-            </p>
-            <span class="lead">Michael Strahan</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End QT -->
-
-    <!-- Start Menu -->
-    <div class="menu-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="heading-title text-center">
-              <h2>Special Menu</h2>
-              <p>
-                We offer flavorful filling cuisine that will not only satisfy your hunger but will also calm your soul, whet your relish, and nourish your body and mind.
-                While you sit back and unwind, we create meals for your kitchen based on your tastes and preferences.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="special-menu text-center">
-              <div class="button-group filter-button-group">
-                <button class="active" data-filter="*">All</button>
-                <button data-filter=".drinks">Drinks</button>
-                <button data-filter=".lunch">Lunch</button>
-                <button data-filter=".dinner">Dinner</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row special-list">
-          <div class="col-lg-4 col-md-6 special-grid drinks">
-            <div class="gallery-single fix">
-              <img src="images/img-01.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Drinks 1</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$7.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid drinks">
-            <div class="gallery-single fix">
-              <img src="images/img-02.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Drinks 2</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$9.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid drinks">
-            <div class="gallery-single fix">
-              <img src="images/img-03.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Drinks 3</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$10.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid lunch">
-            <div class="gallery-single fix">
-              <img src="images/img-04.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Lunch 1</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$15.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid lunch">
-            <div class="gallery-single fix">
-              <img src="images/img-05.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Lunch 2</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$18.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid lunch">
-            <div class="gallery-single fix">
-              <img src="images/img-06.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Lunch 3</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$20.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid dinner">
-            <div class="gallery-single fix">
-              <img src="images/img-07.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Dinner 1</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$25.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid dinner">
-            <div class="gallery-single fix">
-              <img src="images/img-08.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Dinner 2</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$22.79</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 special-grid dinner">
-            <div class="gallery-single fix">
-              <img src="images/img-09.jpg" class="img-fluid" alt="Image" />
-              <div class="why-text">
-                <h4>Special Dinner 3</h4>
-                <p>Sed id magna vitae eros sagittis euismod.</p>
-                <h5>$24.79</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Menu -->
-
-    <!-- Start Gallery -->
-    <div class="gallery-box">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="heading-title text-center">
-              <h2>Gallery</h2>
-              <p>
-               Our Resturant in Pictures
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="tz-gallery">
+      <div id="fh5co-slider" class="fh5co-section animate-box">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <a class="lightbox" href="images/gallery-img-01.jpg">
-                <img
-                  class="img-fluid"
-                  src="images/gallery-img-01.jpg"
-                  alt="Gallery Images"
-                />
-              </a>
+            <div class="col-md-6 animate-box">
+              <div class="fh5co-heading">
+                <h2>On Our Menu</h2>
+              </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-              <a class="lightbox" href="images/gallery-img-02.jpg">
-                <img
-                  class="img-fluid"
-                  src="images/gallery-img-02.jpg"
-                  alt="Gallery Images"
-                />
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-              <a class="lightbox" href="images/gallery-img-03.jpg">
-                <img
-                  class="img-fluid"
-                  src="images/gallery-img-03.jpg"
-                  alt="Gallery Images"
-                />
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <a class="lightbox" href="images/gallery-img-04.jpg">
-                <img
-                  class="img-fluid"
-                  src="images/gallery-img-04.jpg"
-                  alt="Gallery Images"
-                />
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-              <a class="lightbox" href="images/gallery-img-05.jpg">
-                <img
-                  class="img-fluid"
-                  src="images/gallery-img-05.jpg"
-                  alt="Gallery Images"
-                />
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-              <a class="lightbox" href="images/gallery-img-06.jpg">
-                <img
-                  class="img-fluid"
-                  src="images/gallery-img-06.jpg"
-                  alt="Gallery Images"
-                />
-              </a>
+            <div class="col-md-6 col-md-push-1 animate-box">
+              <aside id="fh5co-slider-wrwap">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li style="background-image: url(images/gallery7.jpg)">
+                      <div class="overlay-gradient"></div>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div
+                            class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg"
+                          >
+                            <div class="slider-text-inner">
+                              <div class="desc">
+                                <h2>
+                                  Pancakes <em>with</em> Scrambled eggs &amp;
+                                  Sausage
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="background-image: url(images/gallery20.jpg)">
+                      <div class="overlay-gradient"></div>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div
+                            class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg"
+                          >
+                            <div class="slider-text-inner">
+                              <div class="desc">
+                                <h2>Deep fried <em>frozen</em> Samosas</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="background-image: url(images/gallery21.jpg)">
+                      <div class="overlay-gradient"></div>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div
+                            class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg"
+                          >
+                            <div class="slider-text-inner">
+                              <div class="desc">
+                                <h2>
+                                  Grilled Tilapia <em>with</em> Veggie Toppings
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Gallery -->
 
-    <!-- Start Customer Reviews -->
-    <!-- <div class="customer-reviews-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="heading-title text-center">
-              <h2>Customer Reviews</h2>
+      <div id="fh5co-blog" class="fh5co-section">
+        <div class="container">
+          <div class="row animate-box">
+            <div
+              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+            >
+              <h2>Contact Us for Your Events</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <div
+                  href="#"
+                  class="blog-bg"
+                  style="background-image: url(images/gallery1.jpg)"
+                ></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <div
+                  href="#"
+                  class="blog-bg"
+                  style="background-image: url(images/gallery2.jpg)"
+                ></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <div
+                  href="#"
+                  class="blog-bg"
+                  style="background-image: url(images/gallery3.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <div
+                  href="#"
+                  class="blog-bg"
+                  style="background-image: url(../images/gallery17.jpeg)"
+                ></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <div
+                  href="#"
+                  class="blog-bg"
+                  style="background-image: url(../images/gallery12.jpg)"
+                ></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fh5co-blog animate-box">
+                <div
+                  href="#"
+                  class="blog-bg"
+                  style="background-image: url(../images/gallery21.jpeg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="fh5co-started"
+        class="fh5co-section animate-box"
+        style="background-image: url(images/cf-book-bg.jpg)"
+        data-stellar-background-ratio="0.5"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+              <h2>Catering Service</h2>
+              <p>Engage us for your personal and event catering needs</p>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                <a href="reservation.html" class="btn btn-primary btn-outline"
+                  >Book Now</a
+                >
               </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-8 mr-auto ml-auto text-center">
-            <div id="reviews" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner mt-4">
-                <div class="carousel-item text-center active">
-                  <div class="img-box p-1 border rounded-circle m-auto">
-                    <img
-                      class="d-block w-100 rounded-circle"
-                      src="images/profile-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <h5 class="mt-4 mb-0">
-                    <strong class="text-warning text-uppercase"
-                      >Paul Mitchel</strong
-                    >
-                  </h5>
-                  <h6 class="text-dark m-0">Web Developer</h6>
-                  <p class="m-0 pt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    eu sem tempor, varius quam at, luctus dui. Mauris magna
-                    metus, dapibus nec turpis vel, semper malesuada ante. Idac
-                    bibendum scelerisque non non purus. Suspendisse varius nibh
-                    non aliquet.
-                  </p>
-                </div>
-                <div class="carousel-item text-center">
-                  <div class="img-box p-1 border rounded-circle m-auto">
-                    <img
-                      class="d-block w-100 rounded-circle"
-                      src="images/profile-3.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <h5 class="mt-4 mb-0">
-                    <strong class="text-warning text-uppercase"
-                      >Steve Fonsi</strong
-                    >
-                  </h5>
-                  <h6 class="text-dark m-0">Web Designer</h6>
-                  <p class="m-0 pt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    eu sem tempor, varius quam at, luctus dui. Mauris magna
-                    metus, dapibus nec turpis vel, semper malesuada ante. Idac
-                    bibendum scelerisque non non purus. Suspendisse varius nibh
-                    non aliquet.
-                  </p>
-                </div>
-                <div class="carousel-item text-center">
-                  <div class="img-box p-1 border rounded-circle m-auto">
-                    <img
-                      class="d-block w-100 rounded-circle"
-                      src="images/profile-7.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <h5 class="mt-4 mb-0">
-                    <strong class="text-warning text-uppercase"
-                      >Daniel vebar</strong
-                    >
-                  </h5>
-                  <h6 class="text-dark m-0">Seo Analyst</h6>
-                  <p class="m-0 pt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    eu sem tempor, varius quam at, luctus dui. Mauris magna
-                    metus, dapibus nec turpis vel, semper malesuada ante. Idac
-                    bibendum scelerisque non non purus. Suspendisse varius nibh
-                    non aliquet.
-                  </p>
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#reviews"
-                role="button"
-                data-slide="prev"
-              >
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#reviews"
-                role="button"
-                data-slide="next"
-              >
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div> -->
-    <!-- End Customer Reviews -->
-  
-    <!-- Start Contact info -->
-    <div class="contact-imfo-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-volume-control-phone"></i>
-            <div class="overflow-hidden">
-              <h4>Phone</h4>
-              <p class="lead">+233 244 020 570</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <i class="fa fa-envelope"></i>
-            <div class="overflow-hidden">
-              <h4>Email</h4>
-              <p class="lead">conceptfoods@gmail.com</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <i class="fa fa-map-marker"></i>
-            <div class="overflow-hidden">
-              <h4>Location</h4>
-              <p class="lead">Akropong-Akuapem
-                old level 400 premises a minute walk from the old council.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
+        <footer-component></footer-component>
+      </footer>
     </div>
-    <!-- End Contact info -->
 
-    <!-- Start Footer -->
-   <footer-component></footer-component>
-    <!-- End Footer -->
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
 
-    <a href="#" id="back-to-top" title="Back to top" style="display: none"
-      >&uarr;</a
-    >
-
-    <!-- ALL JS FILES -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/images-loded.min.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/baguetteBox.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
   </body>
 </html>
