@@ -23,10 +23,10 @@ class Footer extends HTMLElement {
 					<h4>Working Hours</h4>
 					<ul class="fh5co-footer-links">
 						<li>Weekdays </li>
-						<li>7am to 8pm</li>
+						<li>10am to 10pm</li>
 						<li><a href="#"></a></li>
 						<li><a href="#">Weekends</a></li>
-						<li>9am to 6pm</li>
+						<li>10am to 10pm</li>
 					</ul>
 				</div>
 

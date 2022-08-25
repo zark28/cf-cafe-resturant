@@ -235,6 +235,7 @@ html {
 .quality-content h1 {
   color: var(--about-sec);
   font-size: 40px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 .quality-content p {
@@ -463,6 +464,27 @@ html {
   padding: 1rem;
 }
 
+.work-hours {
+  width: 100%;
+  margin-top: 10px;
+  color: var(--btn-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  text-align: center;
+}
+.work-hours h4 {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+.work-hours li {
+  list-style: none;
+  font-weight: 600;
+}
 @media (max-width: 767px) {
   .header {
     padding: 3rem;
