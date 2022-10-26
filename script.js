@@ -16,19 +16,19 @@ const sr = ScrollReveal ({
     reset : true,
   })
 
-  sr.reveal('.myimageabout',{ delay:350, origin:'left' })
-  sr.reveal('.about-text-content',{ delay:350, origin:'right' })
-  sr.reveal('.home-image',{ delay:350, origin:'left' })
-  sr.reveal('.home-text-content',{ delay:350, origin:'right' })
+  sr.reveal('.myimageabout',{ delay:150, origin:'left' })
+  sr.reveal('.about-text-content',{ delay:150, origin:'right' })
+  sr.reveal('.home-image',{ delay:150, origin:'left' })
+  sr.reveal('.home-text-content',{ delay:150, origin:'right' })
 
-  sr.reveal('.quality-content',{ delay:350, origin:'left' })
-  sr.reveal('.qulity-image',{ delay:350, origin:'right' })
-  sr.reveal('.gallery-image',{ delay:350, origin:'top' })
-  sr.reveal('.menu-food-content',{ delay:350, origin:'top' })
-  sr.reveal('.menu-food-text',{ delay:350, origin:'bottom' })
-  sr.reveal('.food-main-content',{ delay:350, origin:'bottom' })
-  sr.reveal('.before',{ delay:350, origin:'bottom' })
-  sr.reveal('.footer-logo',{ delay:350, origin:'bottom' })
+  sr.reveal('.quality-content',{ delay:150, origin:'left' })
+  sr.reveal('.qulity-image',{ delay:150, origin:'right' })
+  sr.reveal('.gallery-image',{ delay:150, origin:'top' })
+  sr.reveal('.menu-food-content',{ delay:150, origin:'top' })
+  sr.reveal('.menu-food-text',{ delay:150, origin:'bottom' })
+  sr.reveal('.food-main-content',{ delay:150, origin:'bottom' })
+  sr.reveal('.before',{ delay:150, origin:'bottom' })
+  sr.reveal('.footer-logo',{ delay:150, origin:'bottom' })
 
 
 
